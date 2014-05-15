@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["tessathornton@gmail.com"]
   spec.description   = %q{Converts PSD text to csv}
   spec.summary       = %q{psd to <csv></csv>}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/tessalt/psd2csv"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'Psd2csv'
+
+parse = Psd2csv::Parse.new
+parse.psd2csv

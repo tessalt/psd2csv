@@ -1,29 +1,29 @@
 # Psd2csv
 
-TODO: Write a gem description
+Extracts text from layered PSD files into a .csv file
+
+## Dependencies
+
+* Ruby
+* rubygems
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'psd2csv'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install psd2csv
+        git clone https://github.com/tessalt/psd2csv.git
+        cd psd2csv
+        gem build psd2rb.gemspec
+        gem install ./pkg/psd2csv-0.0.1.gem
 
 ## Usage
 
-TODO: Write usage instructions here
+From a directory containing a PSD file: 
 
-## Contributing
+        psd2csv input.psd output.csv 
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Second argument is desired output file, defaults to "psd.csv"        
+
+## Syntax
+
+For text layers to be extracted, the layer name must contain an index In the format \*[A1] 
+
+(or at least contain the characcters \*[)
